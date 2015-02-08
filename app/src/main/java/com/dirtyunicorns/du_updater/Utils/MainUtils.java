@@ -95,7 +95,7 @@ public class MainUtils {
                 Looper.prepare();
                 JSONParser jsonParser = new JSONParser();
 
-                String path = "http://download.dirtyunicorns.com/json.php?device=" + Build.BOARD + "/" + dir;
+                String path = "http://download.dirtyunicorns.com/json.php?device=" + Build.BOARD + "&folder=" + dir;
 
                 JSONObject json = jsonParser.getJSONFromUrl(path);
                 JSONArray folders = null;

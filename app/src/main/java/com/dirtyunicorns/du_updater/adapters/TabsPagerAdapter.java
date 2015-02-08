@@ -53,14 +53,6 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 System.out.println("Passing: " + Vars.dirs[index]);
                 return frag;
-            /*case 2:
-                return new StatusBarFragment();
-            case 3:
-                return new TaskingFragment();
-            case 4:
-                return new NavigationFragment();
-            case 5:
-                return new MiscFragment();*/
         }
 
         return null;

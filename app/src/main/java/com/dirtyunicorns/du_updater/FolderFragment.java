@@ -49,8 +49,11 @@ public class FolderFragment extends ListFragment {
 
         Vars.files = MainUtils.getFiles(dir);
 
-        ArrayAdapter<String> downloadsAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_expandable_list_item_1, Vars.files);
-        setListAdapter(downloadsAdapter);
+        if (Vars.files.length >0) {
+
+            ArrayAdapter<String> downloadsAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_expandable_list_item_1, Vars.files);
+            setListAdapter(downloadsAdapter);
+        }
 
         return  view;
     }
